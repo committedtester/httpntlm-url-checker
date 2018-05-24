@@ -1,0 +1,21 @@
+{
+  "name": "mocha_admin_panel",
+  "version": "1.0.0",
+  "description": "Test Admin Panel User Security",
+  "main": "index.js",
+  "dependencies": {
+    "mocha": "5.1.1",
+    "httpntlm": "^1.7.6"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2017": "^6.24.1",
+    "chai": "^4.1.2"
+  },
+  "scripts": {
+    "test": "mocha test",
+    "encryptPassword": "node encryptPassword.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
