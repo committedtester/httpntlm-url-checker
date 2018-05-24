@@ -21,17 +21,11 @@ describe('Basic test for Website', () => {
             workstation: localMachineName            
         };
            
-                httpntlm.get({    
-                    url:URL,     
-                    username: username,
-                    lm_password: encryptedLocalMachinePassword,
-                    nt_password: encryptedNetworkPassword,
-                    workstation: localMachineName            
-                },
+                httpntlm.get(parameters,
                 function(err,data) 
                 {
                     console.log(data.statusCode);
-                    assert.equal(data.statusCode, 400)
+                    assert.equal(data.statusCode, 200)
                     done();
                 })
             });
