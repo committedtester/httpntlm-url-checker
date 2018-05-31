@@ -27,18 +27,21 @@ describe('Test website behaviour per user', () =>{
                 function(err,response) 
                 {
                     if(err) console.log(err);
-                    if(data){
+                    if(response){
                            if(typeof callback === "function")
                                 {
-                        callback(data[i]);
+                                    callback(response,data[i]);
                                 }       
                             } 
                 })     
             }
         }
-        it(`test`, () => {
-        processTestData(webPages,function(data){
-            console.log(data.name);            
+        it(`test`, (done) => {
+        processTestData(webPages,function(response,data){
+            console.log(response.statusCode); 
+            console.log(data.statusCode);
+            assert.equal(response.statusCode, data.statusCode,'Status Code does not match');
+            done();           
             })
         })
 
