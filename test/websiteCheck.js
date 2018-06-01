@@ -3,9 +3,19 @@ var chai = require('chai');
 var assert = require('chai').assert
 const URL = 'http://127.0.0.1/bizanalyserservice/';
 var httpntlm = require('httpntlm');
+var websiteArray = require('../test/websiteArray.js');
 
-let webPages =[{name:'basePage',endURL:'http://127.0.0.1/bizanalyserservice/',statusCode:'200',pass:''},
-    {name:'MRAServer',endURL:'http://127.0.0.1/bizanalyserservice/mraserver2',statusCode:'404',pass:''}]
+let webPages = websiteArray.arrayURL;
+
+
+
+/*
+let webPages =[
+    {name:'basePage',endURL:'http://127.0.0.1/bizanalyserservice/',statusCode:'200',pass:''},
+    {name:'MRAServer',endURL:'http://127.0.0.1/bizanalyserservice/mraserver',statusCode:'200',pass:''}
+
+]
+*/
 
     var username ='aaron'
     var localMachineName ='WOMBAT';
