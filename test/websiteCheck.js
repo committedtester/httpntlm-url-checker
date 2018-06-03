@@ -3,9 +3,9 @@ var chai = require('chai');
 var assert = require('chai').assert
 const URL = 'http://127.0.0.1/bizanalyserservice/';
 var httpntlm = require('httpntlm');
-var websiteArray = require('../test/websiteArray.js');
+var websiteArray = require('../testData/websiteArray.js');
 
-let webPages = websiteArray.arrayURL;
+let adminUserwebPages = websiteArray.adminUser;
 
 
 
@@ -46,10 +46,10 @@ describe('Test website behaviour per user', () =>{
             }           
 
 
-    for (let i=0; i<webPages.length;i++)
+    for (let i=0; i<adminUserwebPages.length;i++)
     {  
-        it(`Test${i+1}: ${webPages[i].name} should return status code ${webPages[i].statusCode}`, (done) => {
-        processTestData(webPages[i],function(response){
+        it(`Test${i+1}: ${adminUserwebPages[i].name} should return status code ${adminUserwebPages[i].statusCode}`, (done) => {
+        processTestData(adminUserwebPages[i],function(response){
             done();
         });
         })

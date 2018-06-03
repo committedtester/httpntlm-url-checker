@@ -1,6 +1,6 @@
 var webSiteArray = function() 
 {
-this.arrayURL =
+this.adminUser =
 [{name:'MraServer',endURL: 'http://localhost/BizAnalyserService/MraServer',statusCode:'200'},	
 {name:'Country',endURL: 'http://localhost/BizAnalyserService/Country',statusCode:'200'},	
 {name:'MraModel',endURL: 'http://localhost/BizAnalyserService/MraModel',statusCode:'200'},	
