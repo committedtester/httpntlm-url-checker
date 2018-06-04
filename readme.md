@@ -2,7 +2,7 @@
 However it should be possible to modify for other IIS server's and other websites
 * Note the use of 127.0.0.1 to allow for debugging on local machine while external network connections are not available
 
-#STEP 1:Test your hashed credentials 
+# STEP 1:Test your hashed credentials 
 * You will need to generate an encrypted password for your test windows user
 * Modify the file called 'encryptPassword.js'. Modify the first lines accordingly
 * Modify the url variable to be your IIS server
