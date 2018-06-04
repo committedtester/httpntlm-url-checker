@@ -1,10 +1,9 @@
 ;
 var chai = require('chai');  
 var assert = require('chai').assert
-const URL = 'http://127.0.0.1/bizanalyserservice/';
+//const URL = 'http://127.0.0.1/bizanalyserservice/';
 var httpntlm = require('httpntlm');
 var websiteArray = require('../testData/websiteArray.js');
-var httpMethods = require('../helperMethods/httpMethods.js');
 var os = require("os");
 
 let adminUserwebPages = websiteArray.adminUser;
