@@ -1,7 +1,7 @@
 {
-  "name": "mocha_admin_panel",
+  "name": "httpntlm-url-checker",
   "version": "1.0.0",
-  "description": "Test Admin Panel User Security",
+  "description": "NTLM HTTP data driven framework",
   "main": "index.js",
   "dependencies": {
     "mocha": "5.1.1",
@@ -16,6 +16,10 @@
     "test": "mocha test",
     "encryptPassword": "node encryptPassword.js"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/committedtester/httpntlm-url-checker.git"
+  },
+  "author": "committed Tester",
   "license": "ISC"
 }
