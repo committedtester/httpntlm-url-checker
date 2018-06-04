@@ -2,7 +2,7 @@
 However it should be possible to modify for other IIS server's and other websites
 * Note the use of 127.0.0.1 to allow for debugging on local machine while external network connections are not available
 
-#STEP 1:Test your hashed credentia* 
+#STEP 1:Test your hashed credentials 
 * You will need to generate an encrypted password for your test windows user
 * Modify the file called 'encryptPassword.js'. Modify the first lines accordingly
 * Modify the url variable to be your IIS server
@@ -12,11 +12,11 @@ However it should be possible to modify for other IIS server's and other website
 * Run the following in your terminal 'node encryptPassword.js'
 * You should now connect. Uncomment the lines in the else statement to see more information if neccessary
 
-# STEP 2: UPDATE TESTS
+# STEP 2: Update Tests
 * Tests are in the test folder. Note the header of the js file with the same variables. They are currently configured to use the local windows user and local machine. Please override if neccessary
 
-# STEP 3: UPDATE TEST DATA
+# STEP 3: Update Test Data
 * There is a websiteArray.js file that contains the URL's and an associated expected status code. Override for your website
 
-# STEP 4: RUN THE TEST
+# STEP 4: Run the test
 * Run in your terminal 'npm test'
