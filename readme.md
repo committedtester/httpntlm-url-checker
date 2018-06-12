@@ -23,3 +23,6 @@ However it should be possible to modify for other IIS server's and other website
 
 # SQL Server component
 * Make sure you have enabled TCP/IP Protocols in SQL Server Configuration Manager for both server and client
+
+# Tedious vs mssql npm package
+* I found that my connections weren't being released automatically using mssql as per https://github.com/tediousjs/node-mssql/issues/457. Moving to Tedious removed this problem
