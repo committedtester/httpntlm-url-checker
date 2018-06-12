@@ -20,3 +20,6 @@ However it should be possible to modify for other IIS server's and other website
 
 # STEP 4: Run the test
 * Run in your terminal 'npm test'
+
+# SQL Server component
+* Make sure you have enabled TCP/IP Protocols in SQL Server Configuration Manager for both server and client
