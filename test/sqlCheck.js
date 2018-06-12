@@ -1,21 +1,42 @@
-const sql = require('mssql')
+var Connection = require('tedious').Connection;
+var Request = require('tedious').Request;
+//var async = require('async');
+var sqlMethods =require('../helperMethods/sql');
 
 
-describe('Test sqldatabase', () =>{
+describe('Test sqldatabase', () =>{  
+ 
+    it.only(`Check mssql package works`, () => {  
 
-    const config = {
-        user: 'sa',
-        password: 'Password1',
-        server: 'WOMBAT', // You can use 'localhost\\instance' to connect to named instance
-        database: 'bizanalyser',
-        port:1433,
-     
-        options: {
-            encrypt: false // Use this if you're on Windows Azure
-        }
-    }
+    var countCustomers ='select count(*) from dbo.FinancialData1404';  
+    sqlMethods.sqlRead(countCustomers);
 
-    var countCustomers ='select count(*) from dbo.FinancialData1404';
+    })
+})
+
+
+
+/*
+function executeStatement() {
+        request = new Request("select count(*) from dbo.FinancialData1404", function(err, rowCount) {
+          if (err) {
+            console.log(err);
+          } else {
+            console.log('Connected');
+            console.log(rowCount + ' rows');
+          }
+        });
+    
+        request.on('row', function(columns) {
+          columns.forEach(function(column) {
+            console.log(column.value);
+          });
+        });
+    
+        connection.execSql(request); 
+
+
+
 
     var sqlSelect = new Promise(function(resolve,reject) {
         sql.connect(config).then(pool => 
@@ -38,6 +59,7 @@ describe('Test sqldatabase', () =>{
             }
     })
 
+
     //   https://github.com/tediousjs/node-mssql/issues/457
     
 
@@ -52,3 +74,5 @@ describe('Test sqldatabase', () =>{
     })
 
 })
+
+    */

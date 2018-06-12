@@ -6,7 +6,7 @@
   "dependencies": {
     "mocha": "5.1.1",
     "httpntlm": "^1.7.6",
-    "mssql": "^4.1.0"
+    "tedious": "^2.6.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
