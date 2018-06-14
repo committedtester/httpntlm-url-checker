@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "description": "NTLM HTTP data driven framework",
   "main": "index.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "mocha": "5.1.1",
     "httpntlm": "^1.7.6",
-    "tedious": "^2.6.1"
-  },
-  "devDependencies": {
+    "tedious": "^2.6.1",
     "babel-cli": "^6.26.0",
     "babel-preset-es2017": "^6.24.1",
-    "chai": "^4.1.2"
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1"
   },
   "scripts": {
     "test": "mocha test",
