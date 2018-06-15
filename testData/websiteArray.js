@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 var webSiteArray = function() 
 {
 this.adminUser =
